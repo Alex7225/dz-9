@@ -3,9 +3,7 @@ public class Man extends Person {
         super(firstName, lastName, age, partner);
     }
 
-    @Override
     public boolean isRetired() {
-        if (getAge() >= 65) return true;
-        else return false;
+        return getAge() >= 65;
     }
 }

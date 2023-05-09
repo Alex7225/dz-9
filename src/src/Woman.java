@@ -26,4 +26,8 @@ public class Woman extends Person {
             return super.getLastName();
         } else return "Partner registered!";
     }
+
+    public boolean isRetired() {
+        return getAge() >= 60;
+    }
 }
